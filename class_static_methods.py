@@ -2,6 +2,10 @@
 Regular method-Instance as first argument
 Add decorator "@classmethod" to change regular to class method
 
+
+A class method is a method which is bound to the class and not the object of the class.
+
+It can modify a class state that would apply across all the instances of the class. For example, it can modify a class variable that would be applicable to all the instances.
 """
 
 class TV:
@@ -29,6 +33,7 @@ class TV:
     @classmethod
     def set_price_rise(cls,price):
         cls.price_raise=price
+
 
 Samsung_tv=TV('Samsung',2000,32,30000)
 LG_tv=TV('LG', 2010, 54, 4000)

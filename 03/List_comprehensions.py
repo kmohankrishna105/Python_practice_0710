@@ -1,4 +1,6 @@
-
+"""
+List comprehensions allow us to build out lists using a different notation. You can think of it as essentially a one line for loop built inside of brackets
+"""
 # Grab every letter in string
 lst = [x for x in 'word']
 
